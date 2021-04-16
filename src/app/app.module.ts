@@ -3,14 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MainLayoutComponent } from './shared/components/main-layout/main-layout.component';
+import { HomePageComponent } from './home-page/home-page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SearchBlockComponent } from './shared/components/search-block/search-block.component';
+import { MainMenuComponent } from './shared/components/main-menu/main-menu.component';
+import { IncomingDocumentsComponent } from './incoming-documents/incoming-documents.component';
+import { OutgoingDocumentsComponent } from './outgoing-documents/outgoing-documents.component';
+import { NotificationsComponent } from './notifications/notifications.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainLayoutComponent,
+    HomePageComponent,
+    SearchBlockComponent,
+    MainMenuComponent,
+    IncomingDocumentsComponent,
+    OutgoingDocumentsComponent,
+    NotificationsComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

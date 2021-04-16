@@ -1,0 +1,18 @@
+.wrap {
+  display: flex;
+  width: 100%;
+  .sidebar,
+  .wrapContent {
+    height: 100vh;
+  }
+
+  .sidebar {
+    width: 16.77%;
+    background: #42839e;
+  }
+
+  .wrapContent {
+    width: 83.23%;
+    background: #e5e5e5;
+  }
+}
