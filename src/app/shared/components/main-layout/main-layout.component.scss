@@ -7,8 +7,27 @@
   }
 
   .sidebar {
-    width: 16.77%;
+    position: relative;
+    // width: 16.77%;
+    width: 322px;
     background: #42839e;
+
+    .mainTitle {
+      display: flex;
+      justify-content: center;
+      margin: 80px 0 50px 0;
+      a {
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+      }
+    }
+
+    .logout {
+      position: absolute;
+      width: 100%;
+      bottom: 89px;
+    }
   }
 
   .wrapContent {

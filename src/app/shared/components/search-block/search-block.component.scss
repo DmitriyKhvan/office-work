@@ -1,0 +1,47 @@
+.searchBlock {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 30px;
+  .search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 543px;
+    height: 48px;
+    padding-left: 20px;
+    background: #fff;
+    color: #a1a1a1;
+    input {
+      flex-grow: 1;
+      padding: 0 5px;
+      line-height: 48px;
+      border: none;
+      outline: none;
+      font-size: 16px;
+      color: #a1a1a1;
+    }
+
+    ::placeholder {
+      /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #a1a1a1;
+      opacity: 1; /* Firefox */
+    }
+
+    :-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #a1a1a1;
+    }
+
+    ::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #a1a1a1;
+    }
+  }
+
+  //Select language
+  .customSelect {
+    .mat-select-value {
+      color: #000 !important;
+    }
+  }
+}

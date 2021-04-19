@@ -1,8 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap");
+
+@import "~@angular/material/theming";
+
+$custom-typography: mat-typography-config(
+  $font-family: '"Open Sans", sans-serif;',
+);
+@include mat-core($custom-typography);
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+
+body,
+input {
+  font-family: "Open Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}

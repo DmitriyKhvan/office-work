@@ -1,3 +1,16 @@
 <div class="searchBlock">
-  <p>Поиск блок</p>
+  <div class="search">
+    <mat-icon aria-hidden="false" aria-label="search">search</mat-icon>
+    <input type="text" placeholder="Поиск" />
+  </div>
+  <div>
+    <div class="lang">
+      <mat-form-field appearance="fill" class="customSelect">
+        <mat-select [(value)]="lang">
+          <mat-option value="ru">Русский</mat-option>
+          <mat-option value="uz">O'zbek</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
 </div>

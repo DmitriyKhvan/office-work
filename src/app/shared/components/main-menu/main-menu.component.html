@@ -1,12 +1,21 @@
-<ul>
-  <button mat-button>Basic</button>
-  <li routerLinkActive="active">
-    <a [routerLink]="['incomingDocuments']">Входящие документы</a>
+<ul class="menu">
+  <li class="menuItem" routerLinkActive="active">
+    <a [routerLink]="['incomingDocuments']"
+      ><mat-icon aria-hidden="false" aria-label="folder">folder</mat-icon
+      ><small>Входящие документы</small></a
+    >
   </li>
-  <li routerLinkActive="active">
-    <a [routerLink]="['outgoingDocuments']">Исходящие документы</a>
+  <li class="menuItem" routerLinkActive="active">
+    <a [routerLink]="['outgoingDocuments']"
+      ><mat-icon aria-hidden="false" aria-label="folder">folder</mat-icon
+      ><small>Исходящие документы</small></a
+    >
   </li>
-  <li routerLinkActive="active">
-    <a [routerLink]="['notifications']">Уведомления</a>
+  <li class="menuItem" routerLinkActive="active">
+    <a [routerLink]="['notifications']"
+      ><mat-icon aria-hidden="false" aria-label="notifications"
+        >notifications</mat-icon
+      ><small>Уведомления</small></a
+    >
   </li>
 </ul>
